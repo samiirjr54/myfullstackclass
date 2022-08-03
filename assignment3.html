@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function student_marks(marks_1, marks_2, marks_3){
+             
+            
+                marks_1 = parseInt(prompt("enter the  marks for  students 1: " ));
+                marks_2 = parseInt(prompt("enter the  marks for  students 2: " ));
+                marks_3 = parseInt(prompt("enter the  marks for  students 3: " ));
+                
+                if(marks_1>=0 && marks_2 >=0 && marks_3 >=0){
+
+                    //calculating the highest student marks
+                    if(marks_1 >marks_2 && marks_1 >marks_3){
+                        alert("the highest student marks is " + "" + marks_1)
+
+                    }
+                    
+                    else if(marks_2 >marks_1 && marks_2 >marks_3){
+                        alert("the highest student marks is " + "" + marks_2)
+                    }
+                    else{
+                        alert("the highest student marks is " + "" + marks_3)
+                    }
+                    //calculating the lowest student mark
+                    if(marks_1 <=marks_2 && marks_1 <marks_3){
+                        alert("the lowest student mark is " + "" + marks_1 );
+                    }
+
+                    
+                    else if(marks_2 <=marks_1 && marks_2 <marks_3){
+                        alert("the lowest student mark is " + "" + marks_2 );
+
+                    }
+                
+                    
+                    else{
+                        alert("the lowest student mark is " + "" + marks_3 );
+                    }
+            }
+                else{
+                    alert("enter a valid marks to compare");
+                }
+                return;
+                
+            
+              
+            }
+            document.write(student_marks());
+               
+           
+        </script>
+       
+    </body>
+</html>

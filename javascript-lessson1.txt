@@ -1,0 +1,14 @@
+
+		---javascript--
+
+-syntax case sensitive
+-space or number of lines does not affect the sensitivity
+-// single line of commment
+-/**/ multi-line of comment
+
+ 		--variables--
+-variables are used for temprorary storage
+-loosely typed language because it does not specify the data type of the variable.
+
+
+-data types

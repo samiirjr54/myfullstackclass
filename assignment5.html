@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function safaricom(num1, user_input1, user_input2, user_input3){
+        var num1 = "*544#";
+        var user_input1 =prompt("dial up *544#");
+        if(user_input1 == num1){
+             var user_input2 = parseInt(prompt("1.get daily bundles" + "\n" + "2.get weakly bundles" + "\n" + "3.get monthly bundles" + "\n" + "4.my data deals" + "\n" + "5.jitambulishe"));
+             switch(user_input2){
+                case 1:
+                    var user_input3 = parseInt(prompt("1.10mb @5" + "\n" + "2.20mb @10" + "\n" + "3.50mb @20" + "\n" + "4.100mb @50" + "\n" + "5. press for more" + "\n" + "6.to the main menu"));
+                break;
+                    
+                case 2:
+                var user_input3 = parseInt(prompt("1.100mb @40" + "\n" + "2.200mb @70" + "\n" + "3.350mb @100" + "\n" + "4.500mb @130" + "\n" + "5. press for more" + "\n" + "6.to the main menu"));
+                break;
+                 
+                case 3:
+                var user_input3 = parseInt(prompt("1.1GBmb @250" + "\n" + "2.2gb @300" + "\n" + "3.5gb @400" + "\n" + "4.5gb @500" + "\n" + "5. press for more" + "\n" + "6.to the main menu"));
+                break;
+                 
+                case 4:
+                var user_input3 = parseInt(prompt("1.100mb for 1hr @5 " + "\n" + "2.250mb for 1hr @10" + "\n" + "3.500mb for 2hrs @20" + "\n" + "4.1gb for 3hrs @50" + "\n" + "5. press for more" + "\n" + "6.to the main menu"));
+                break;
+                 
+                case 5:
+                var user_input3 = parseInt(prompt("1.Nyakua bonus " + "\n" + "2.pochi la beishara" + "\n" + "3.my account" + "\n" + "4.mpesa pap" + "\n" + "5.press it to return to previous" ));
+                    switch(user_input3){
+                        case 5:  var user_input2 = parseInt(prompt("1.get daily bundles" + "\n" + "2.get weakly bundles" + "\n" + "3.get monthly bundles" + "\n" + "4.my data deals" + "\n" + "5.jitambulishe"));
+                        break;
+                    }
+                break;
+
+
+             }
+             
+        }
+    
+        else{
+            alert("the dial up is invalid");
+        }
+        return;
+
+      }
+      alert(safaricom());
+    </script>
+</body>
+</html>

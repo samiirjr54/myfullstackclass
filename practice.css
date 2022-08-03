@@ -1,0 +1,48 @@
+/*
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: cornsilk;
+}
+.main{
+    width: 100%;
+}
+.container{
+    width: 500px;
+    margin: 200px auto;
+    padding: 20px;
+}
+.container form{
+    
+}
+.container .num1{
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+.container .num2{
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+.container .answer{
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+.container .button{
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.container .button:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+*/
+#change{
+    height: 220px;
+    width: 800px;
+    background: blueviolet;
+}

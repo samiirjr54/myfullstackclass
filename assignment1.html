@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src=""></script>
+    </head>
+    <body>
+        <script>
+            // geting the cat marks
+            let num1 = parseInt(prompt("please enter the cat marks"));
+            if(num1 >=0 && num1 <=30){
+                let cat_marks = num1;
+
+                    //getting the exam marks
+                    let num2 = parseInt(prompt("please enter the final marks"));
+                    if(num2 >=0 && num2 <=70){
+                    let exam = num2;
+                    
+                    //calculating  the total marks
+                    let total = num1 + num2;
+
+                        //determining the grade
+                        if(total >=80 && total <=100){
+                            alert("your grade is DISTINCTION");
+                        }
+                        else if(total >=60 && total <=79){
+
+                            alert("your grade is CREDIT");
+                        }
+                         else if(total >=40 && total <=59){
+
+                            alert("your grade is PASS");
+                        }
+                        else{
+                            alert("you have failed");
+                        }
+
+                    }
+                    else if(num2 <0 || num2 >70){
+                        alert("the exam marks are invalid");
+                    }
+                    else{
+                        alert("you have not entered  exam marks")
+                    }
+
+            }
+            else if(num1 <0 || num1 >30){
+                alert("the cat marks are invalid");
+            }
+            else{
+                alert("you have not entered the cat marks");
+            }
+          
+
+        </script>
+    </body>
+</html>

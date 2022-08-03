@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function convert_currency(result_1, result_2, user_input, choice_currency){
+            var user_input = parseInt(prompt("enter the amount you want to convert"));
+            var choice_currency = parseInt(prompt("please choose the currency you want to convert to\nksh\ndollar\n"));
+
+                if(choice_currency = "ksh"){
+                    var result_1 = user_input * 100;
+                    return result_1;
+                    
+                }
+
+                else if(choice_currency = "dollar"){
+                    var result_2 = user_input / 100;
+                    return result_2;
+                  
+
+                }
+                else{
+                    alert("number invalid");
+                }
+
+                return;
+               
+           
+        
+        }
+        document.write(convert_currency());
+    </script>
+</body>
+</html>

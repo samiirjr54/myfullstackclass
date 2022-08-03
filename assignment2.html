@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let price = parseInt(prompt("Enter your shopping list amount :"));
+
+           if(price>0){
+            switch (price>0){
+                case (price>=7000):
+                   var discount = price * 0.15;
+                   var final_price = price - discount;
+                   alert("the shopping price = " + price + '\n' + "discount(15%)= " + discount + '\n' +  "final price = " + final_price);
+                break;
+                case (price>=5000 && price<7000):
+                   var discount = price * 0.10;
+                   var final_price = price - discount;
+                   alert("the shopping price = " + price + '\n' + "discount(10%)= " + discount + '\n' +  "final price = " + final_price);
+                break;
+
+                case (price>=2000 && price<5000):
+                   var discount = price * 0.05;
+                   var final_price = price - discount;
+                   alert("the shopping price = " + price + '\n' + "discount(5%)= " + discount + '\n' +  "final price = " + final_price);
+                break;
+                
+                case (price<2000 ):
+                   var discount = 0;
+                   var final_price = price - discount;
+                   alert("the shopping price = " + price + '\n' + "discount(0%)= " + discount + '\n' +  "final price = " + final_price);
+                break;
+
+             }
+            }
+             else{
+                alert("please enter a valid shopping list amount");
+             }
+            
+
+
+     
+        
+    </script>
+</body>
+</html>

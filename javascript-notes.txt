@@ -1,0 +1,36 @@
+
+		---javascript--
+
+-syntax case sensitive
+-space or number of lines does not affect the sensitivity
+-// single line of commment
+-/**/ multi-line of comment
+
+ 		--variables--
+-variables are used for temprorary storage
+-loosely typed language because it does not specify the data type of the variable.
+
+	-rules for naming variables
+
+-should start with letter
+-when do not use special names like keywords
+-
+-when naming variables give it one name or use underscore to connect two words
+-
+
+create analoque watch using javascript
+read on network request 
+asynchronous = the normal way of excution of code by lines inorder 
+asynchronous
+
+
+call back function = having a function and calling back onother function.
+
+//assignment
+
+number1;
+number2;
+multiply
+divide 
+the answer is 
+50

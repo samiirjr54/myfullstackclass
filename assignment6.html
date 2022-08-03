@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="practice.js"></script>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="h2">The bus schedule fare</h2>
+        <label for="distance-input" id="label">Enter the distance to travel</label><br>
+        <input type="number" placeholder="Distance in KM" id="distance-input"><br>
+        <label for= "passenger-input" id="label">Enter the number of passengers travelling</label><br>
+        <input type="number" placeholder="No of passengers" id="passenger-input"><br>
+        <button type="button" id="button" onclick ="bus_fare()">Bus fare</button>
+        
+    </div>
+    <script>
+         function bus_fare(){
+            var fare =document.getElementById("distance-input").value;
+            var passengers = document.getElementById("passenger-input").value;
+
+              if(fare>0 && passengers>0){
+                  if(fare>=1 && fare<=10){
+                    var total_fare = passengers*100;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else if(fare>=11 && fare<=50){
+                    var total_fare = passengers*300;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else if(fare>=51 && fare<=100){
+                    var total_fare = passengers*500;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else if(fare>=101 && fare <=200){
+                    var total_fare = passengers*1000;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else if(fare>=201 && fare <=300){
+                    var total_fare = passengers*1200;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else if(fare>=301 && fare <=400){
+                    var total_fare = passengers*1500;
+                    alert("your bus fare is sh: " + total_fare );
+                  }
+                  else{
+                    alert(" Sorry Bus does not go beyond 400km")
+                  }
+              }
+              else{
+                alert("data is invalid");
+              }
+
+            return;
+          }
+    </script>
+</body>
+</html>
